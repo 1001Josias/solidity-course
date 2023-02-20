@@ -9,3 +9,8 @@ npm +9.4.2
 ```
 npx solc --bin HelloWorld.sol
 ```
+
+### Generate ABI (Aplication Binary Interface):
+```
+npx solc --abi [filename].sol
+```
