@@ -5,11 +5,13 @@ contract Visibility {
     int public score = 0;
 
     function increment() public {
-        score = score + 1;
+        incrementPrivate();
+        // incrementExternal(); The incrementExternal function cannot be accessed from within the contract, it can only be accessed from outside the contract.
     }
 
     function incrementExternal() external {
-        score = score + 1;
+        incrementInternal();
+        increment();
     }
 
     function incrementPrivate() private {
