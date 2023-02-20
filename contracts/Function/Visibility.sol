@@ -11,4 +11,8 @@ contract Visibility {
     function incrementExternal() external {
         score = score + 1;
     }
+
+    function incrementPrivate() private {
+        score = score + 1;
+    }
 }
