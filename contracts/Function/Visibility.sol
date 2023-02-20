@@ -2,7 +2,7 @@
 pragma solidity 0.8.18;
 
 contract Visibility {
-    int score = 0;
+    int public score = 0;
 
     function increment() public {
         score = score + 1;
