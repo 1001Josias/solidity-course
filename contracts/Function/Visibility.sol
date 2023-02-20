@@ -7,4 +7,8 @@ contract Visibility {
     function increment() public {
         score = score + 1;
     }
+
+    function incrementExternal() external {
+        score = score + 1;
+    }
 }
