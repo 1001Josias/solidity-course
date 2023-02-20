@@ -1,2 +1,0 @@
-Compile contract from solidity to bytecode:
-npx solc --bin HelloWorld.sol
