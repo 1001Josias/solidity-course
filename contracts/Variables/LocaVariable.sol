@@ -9,6 +9,7 @@ contract LocalVariable {
     }
 
     function incrementScore() public returns (int){
+        // Unable to create state variables in function scope
         int increment = 3; //this is local variable
         score = score + increment;
         return score;
